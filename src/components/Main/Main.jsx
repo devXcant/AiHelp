@@ -12,7 +12,7 @@ const Main = () => {
         <div className="main">
             <div className="nav">
                 <p>AiHelper</p>
-                <img src={assets.user_icon} alt="" />
+                <img src={assets.aichip_icon} alt="" />
             </div>
             <div className="main-container">
 
@@ -45,7 +45,7 @@ const Main = () => {
                 </div>
                 </> :  <div className='result'> 
                         <div className="result-title">
-                            <img src={assets.user_icon} alt="" />
+                            <img src={assets.aichip_icon} alt="" />
                             <p>{recentPrompt}</p>
                         </div>
                         <div className="result-data">
