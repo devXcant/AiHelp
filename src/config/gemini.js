@@ -1,7 +1,9 @@
 
 
-// node --version # Should be >= 18
-// npm install @google/generative-ai
+// import('dotenv').config();
+
+// const API_KEY_NO = process.env.API_KEY_NO;
+
 
 import {
   GoogleGenerativeAI,
@@ -52,6 +54,7 @@ async function runChat(prompt) {
   const result = await chat.sendMessage(prompt);
   const response = result.response;
   console.log(response.text());
+  return response.text()
 }
 
 export default runChat;
